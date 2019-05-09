@@ -1,17 +1,9 @@
-{application, strategy,
- [{description, "An OTP application"},
-  {vsn, "0.1.0"},
-  {registered, []},
-  {mod, {strategy_app, []}},
-  {applications,
-   [kernel,
-    stdlib,
-    lager, 
-    sasl
-   ]},
-  {env,[]},
-  {modules, []},
-
-  {licenses, ["Apache 2.0"]},
-  {links, []}
- ]}.
+{application, strategy, [
+    {description, "A Strategy Game"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {mod, {strategy_app, []}},
+    {applications, [kernel, stdlib, lager, ranch]},
+    {env,[]},
+    {modules, []}
+]}.
